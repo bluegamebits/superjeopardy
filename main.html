@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+                let cajas = document.querySelectorAll(".preguntas");
+
+                Array.from(cajas, function(preguntas) {
+                    preguntas.addEventListener("click", function() {
+                        alert("click click");
+                    });
+                });
+            });
+        </script>
         <style>
 
             .tabla {
@@ -29,8 +40,13 @@
                 display: grid;
                 align-items: center;
                 justify-items: center;
-
+                cursor: pointer;
                 background:rgb(255, 255, 255);                
+            }
+
+            .preguntas:hover{
+                background: blue;
+                color: white;
             }
         </style>
     </head>
