@@ -37,5 +37,4 @@ Los siguientes 'features
 
 
  
-Fecha limite de la versión alpha
- 0.01: 05/10/2021
+
